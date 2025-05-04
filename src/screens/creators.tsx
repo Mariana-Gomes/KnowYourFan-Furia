@@ -1,5 +1,5 @@
 import "../App.css";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { Header } from "../components/Header";
 

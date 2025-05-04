@@ -59,6 +59,8 @@ const schema = yup.object().shape({
   documentVerified: yup.boolean(),
 });
 
+export type SubmitFormData = yup.InferType<typeof schema>;
+
 export function Profile() {
   const { user, updateUserData, showToast } = useAuth();
   const [step, setStep] = useState(1);
@@ -121,7 +123,7 @@ export function Profile() {
   };
   const handlePreviousStep = () => setStep(step - 1);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: SubmitFormData) => {
     try {
       if (user?.uid) {
         const userRef = doc(db, "usuarios", user.uid);
@@ -147,9 +149,9 @@ export function Profile() {
       setValue("neighborhood", data.neighborhood);
       setValue("street", data.street);
     } catch (error) {
-      const message = error?.message
-        ? error.message
-        : "CEP inválido ou não encontrado";
+      console.log(error);
+      const message = "CEP inválido ou não encontrado";
+
       setError("cep", {
         type: "manual",
         message,

@@ -1,5 +1,5 @@
 import { format, formatDistanceToNow } from "date-fns";
-import ptBR from "date-fns/locale/pt-BR";
+import { ptBR } from "date-fns/locale/pt-BR";
 
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
@@ -115,7 +115,7 @@ export function Post({ post }: PostProps) {
       </header>
 
       <div className="text-gray-300 leading-6 mt-6">
-        {post.content.map((line, index) => {
+        {post.content.map((line) => {
           if (line.type === "paragraph") {
             return (
               <p key={line.content} className="mt-4">

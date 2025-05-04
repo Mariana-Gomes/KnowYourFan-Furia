@@ -52,7 +52,7 @@ export function Comment({ comment, onDeleteComment }: CommentProps) {
             </div>
             {comment.isUser && (
               <button
-                onClick={() => openModal(comment)}
+                onClick={() => openModal()}
                 title="Deletar comentário"
                 className="bg-transparent border-0 text-gray-400 cursor-pointer rounded-sm hover:text-red-500"
               >
