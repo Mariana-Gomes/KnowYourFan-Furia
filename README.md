@@ -36,6 +36,22 @@ O desafio propunha o desenvolvimento de uma solução que coletasse informaçõe
 - Verificar quais criadores você segue ou não;
 - Submeter documentos para validação de identidade.
 
+## 🔐 Configuração das Variáveis de Ambiente
+
+Este projeto utiliza variáveis de ambiente para armazenar informações sensíveis, como chaves de API do Firebase e da Twitch. Essas variáveis não estão incluídas no repositório, por motivos de segurança.
+
+1. **Crie o seu próprio arquivo `.env`**
+
+No diretório raiz do projeto renomeie o arquivo `.env.example` para `.env`
+
+2. **Preencha com os seus próprios valores**
+
+Você precisará criar um projeto no Firebase e configurar os seguintes serviços:
+
+- Crie um novo projeto web no Firebase;
+- Após o registro, copie as credenciais fornecidas e substitua no arquivo `.env`
+- Ative os serviços **Authentication** (ative o método de login Email/Senha) e o **Firestore Database**;
+
 ## ⚙️ Instruções para Rodar o Projeto  
 1. **Clone o repositório**  
 ```bash
