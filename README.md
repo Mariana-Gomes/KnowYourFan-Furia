@@ -34,8 +34,8 @@ O desafio propunha o desenvolvimento de uma solução que coletasse informaçõe
 ## ⚙️ Instruções para Rodar o Projeto  
 1. **Clone o repositório**  
 ```bash
-git clone https://github.com/Mariana-Gomes/KnowYourFan 
-cd KnowYourFan
+git clone https://github.com/Mariana-Gomes/KnowYourFan-Furia
+cd KnowYourFan-Furia
 ```
 
 2. **Instale as dependências**
