@@ -6,6 +6,10 @@ O desafio propunha o desenvolvimento de uma solução que coletasse informaçõe
 
 ![KnowYourFan](https://github.com/user-attachments/assets/3be81289-14f1-4fec-b326-6c123cf45d64)
 
+## 🔗 Acesse o Projeto
+
+**Deploy Vercel:** [https://know-your-fan-furia-gamma.vercel.app/](https://know-your-fan-furia-gamma.vercel.app/)
+
 ## 👩🏻‍💻 Tecnologias Utilizadas  
 - **ReactJS**: Biblioteca para a criação de interfaces de usuário, utilizada para construir o front-end da aplicação.
 - **TailwindCSS**: Framework utilitário para estilização rápida e responsiva, permitindo um design altamente customizável sem sair do código HTML.
@@ -17,6 +21,7 @@ O desafio propunha o desenvolvimento de uma solução que coletasse informaçõe
 - **Tesseract.JS**: Biblioteca JavaScript para OCR (Reconhecimento Óptico de Caracteres), utilizada para extrair texto de imagens.
 - **Yup**: Biblioteca para validação de esquemas de dados, frequentemente usada com React-Hook-Form para validação de formulários.
 - **Twitch API**: API que permite acessar informações sobre canais, usuários, streams e jogos, facilitando a integração de recursos da plataforma em aplicações web.
+- **Vercel**: Plataforma de hospedagem para aplicações front-end, oferece deploy rápido e integração contínua com repositórios Git.
 
 ## 🖐️ Funcionalidades
 
