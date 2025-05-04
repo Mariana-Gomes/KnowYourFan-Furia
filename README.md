@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# ⚡ Teste Técnico  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O desafio propunha o desenvolvimento de uma solução que coletasse informações detalhadas sobre um **fã de esports**. A proposta era criar uma aplicação que ajudasse os clubes a entenderem melhor seus fãs, aplicando a estratégia de **Know Your Fan** para oferecer experiências e serviços exclusivos.
 
-Currently, two official plugins are available:
+## 💻 A Aplicação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![KnowYourFan](https://github.com/user-attachments/assets/3be81289-14f1-4fec-b326-6c123cf45d64)
 
-## Expanding the ESLint configuration
+## 👩🏻‍💻 Tecnologias Utilizadas  
+- **ReactJS**: Biblioteca para a criação de interfaces de usuário, utilizada para construir o front-end da aplicação.
+- **TailwindCSS**: Framework utilitário para estilização rápida e responsiva, permitindo um design altamente customizável sem sair do código HTML.
+- **Vite**: Ferramenta de build moderna, focada em desenvolvimento rápido com React e suporte nativo a TypeScript.
+- **React-Hook-Form**: Biblioteca para gerenciar formulários de forma eficiente em React, com integração simplificada e validação de dados.  
+- **Axios**: Biblioteca para realizar requisições HTTP, utilizada para consumir APIs e fazer a comunicação com servidores. 
+- **Firebase**: Plataforma de desenvolvimento que fornece backend como serviço, oferecendo funcionalidades como autenticação, banco de dados em tempo real e hospedagem.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática, proporcionando maior segurança e facilidade na manutenção do código
+- **Tesseract.JS**: Biblioteca JavaScript para OCR (Reconhecimento Óptico de Caracteres), utilizada para extrair texto de imagens.
+- **Yup**: Biblioteca para validação de esquemas de dados, frequentemente usada com React-Hook-Form para validação de formulários.
+- **Twitch API**: API que permite acessar informações sobre canais, usuários, streams e jogos, facilitando a integração de recursos da plataforma em aplicações web.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🖐️ Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Criar conta;
+- Realizar login com uma conta existente;
+- Comentar em publicações de outros usuários;
+- Curtir publicações;
+- Editar o perfil do usuário (alterando nome, foto, banner e biografia);
+- Preencher um formulário com informações pessoais, como CPF, e-mail, endereço e interesses;
+- Obter selo de **usuario verificado**;
+- Acessar a lista de criadores oficiais da plataforma;
+- Verificar quais criadores você segue ou não;
+- Submeter documentos para validação de identidade.
+
+## ⚙️ Instruções para Rodar o Projeto  
+1. **Clone o repositório**  
+```bash
+git clone https://github.com/Mariana-Gomes/KnowYourFan-Furia
+cd KnowYourFan-Furia
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Instale as dependências**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- Rode a apliação utilizando:
+
+```bash
+npm run dev
 ```
