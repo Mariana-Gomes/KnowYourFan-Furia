@@ -4,7 +4,7 @@ O desafio propunha o desenvolvimento de uma solução que coletasse informaçõe
 
 ## 💻 A Aplicação
 
-![KnowYourFan](https://github.com/user-attachments/assets/3be81289-14f1-4fec-b326-6c123cf45d64)
+![KnowYourFan](https://github.com/user-attachments/assets/baff08de-f7ac-4a72-9860-07ede25f61e6)
 
 ## 🔗 Acesse o Projeto
 
